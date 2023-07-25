@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <servlet-name>ShowUsers</servlet-name>
+        <servlet-class>com.demo.controller.UserServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <description></description>
+        <servlet-name>UpdateStatus</servlet-name>
+        <servlet-class>com.demo.controller.UserStatusServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteById</servlet-name>
+        <servlet-class>com.demo.controller.UserDeleteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>QueryUser</servlet-name>
+        <servlet-class>com.demo.controller.UserQueryServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateById</servlet-name>
+        <servlet-class>com.demo.controller.UserUpdateServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddUser</servlet-name>
+        <servlet-class>com.demo.controller.UserAddServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PageJump</servlet-name>
+        <servlet-class>com.demo.controller.UserAddJumpServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShowUsers</servlet-name>
+        <url-pattern>/ShowUsers</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateStatus</servlet-name>
+        <url-pattern>/UpdateStatus</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteById</servlet-name>
+        <url-pattern>/DeleteById</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>QueryUser</servlet-name>
+        <url-pattern>/QueryUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateById</servlet-name>
+        <url-pattern>/UpdateById</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddUser</servlet-name>
+        <url-pattern>/AddUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PageJump</servlet-name>
+        <url-pattern>/PageJump</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
